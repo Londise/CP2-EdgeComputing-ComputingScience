@@ -1,4 +1,4 @@
-# Sistema de Monitoramento de Luminosidade para Vinhos
+# Sistema de Monitoramento do Ambiente para Vinhos
 Este projeto consiste em um sistema que utiliza um sensor de luz (LDR) para monitorar os níveis de luminosidade em um ambiente, garantindo que os vinhos em uma vinícola estejam armazenados em condições ideais de iluminação, umidade e temperatura. O sistema utiliza um Display, LEDs, sensores de luz/umidade/temperatura e um buzzer para indicar se a luminosidade está adequada, em alerta ou em condição crítica. Sendo assim, este sistema é uma atualização do projeto anterior (CP1-EdgeComputing-ComputingScience) presente aqui no meu perfil da plataforma com melhorias referentes à leitura de novas variáveis ambientais e à forma na qual estes valores são apresentados ao usuário, formando assim um sistema mais complexo em sua estrutura que continua sendo agradável ao usuário.
 
 
