@@ -36,6 +36,8 @@ O circuito é montado de acordo com as seguintes conexões entre o Arduino UNO R
 O código embarcado no Arduino é responsável por ler os valores analógicos dos sensores de LUMINOSIDADE, UMIDADE E TEMPERATURA, convertê os valores de LUMINOSIDADE em uma escala de 0 a 100 por cento e conserva os valores de UMIDADE e TEMPERATURA e toma ações com base nesses valores. O sistema opera da seguinte maneira:
 
 - Configuração Inicial: Define os pinos, cria os bytes personalizados e variáveis necessárias.
+#Display
+O Display utilizado no projeto possuí um total de 9 slides de exibição de valores, cada um deles com responsividade aos valores de leitura, neste documento são mostrados os 9 slides presentes [deste link](https://1drv.ms/w/s!AvJcCUXaUfHtn0q4y_fwj6MFhKuf?e=xBN7kH)
 
 ## SETUP
 - Inicia o som de introdução.
