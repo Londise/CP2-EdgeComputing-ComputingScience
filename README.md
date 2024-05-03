@@ -64,9 +64,7 @@ O Display em conjunto com o Buzzer e os LEDs atuam como principais indicadores f
 
 ## Lógica por tras do código e conselhos:
 - As condições criadas para determinar a qualidade do ambiente em que o vinho se encontra aparecem duas vezes, uma trabalhando com o display, e a outra trabalhando com o Buzzer e os LEDs, como são semelhantes, há uma responsividade bem parecida e uniforme, porém estas condições não são totalmente iguais devido as petições do coordenador do projeto.
-<br>
 - A presença de variáveis controladoras de tempo foi necessária para não criar conflitos causados pelo delay, isto foi crucial na criação do slider de seções.
-<br>
 Os valores limite de luminosidade devem ser calibrados de acordo com os componentes a serem utilizados e as necessidades específicas da vinícola visto que:
 - A resistência do módulo LDR afeta de maneira diretamente proporcional aos valores de leitura.
 - o modelo do módulo LDR também influi nos valores de leitura.
