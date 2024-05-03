@@ -40,22 +40,20 @@ O código embarcado no Arduino é responsável por ler os valores analógicos do
 O Display utilizado no projeto possuí um total de 9 slides de exibição de valores, cada um deles com responsividade aos valores de leitura, [neste documento](https://1drv.ms/w/s!AvJcCUXaUfHtn0q4y_fwj6MFhKuf?e=xBN7kH) são mostrados os 9 slides presentes 
 
 ## SETUP
+- Inicializa o DHT11, o Serial Monitor e o Display
 - Inicia o som de introdução.
 - Inicia a introdução Animada no DISPLAY.
 - Cria os chars dos bytes personalizados.
 
 ## Loop Principal:
-- Configura e executa as seções (1 LUZ, 2 UMIDADE, 3 TEMPERATURA) com as condições para serem mostradas a cada 5 segundos no DISPLAY
-- Lê os valores de leitura dos sensores (DHT22, LDR).
-- Converte o valor da LUMINOSIDADE em uma escala de 0 a 100 para representar a LUMINOSIDADE.
-- Cria as condições OK, ALERTA e CRÍTICA e compara os valores lidos pelos sensores para determinar a condição a ser executada.
-- Modifica cada seção no Display de acordo com os condições correspondentes, acende os LEDs e liga/desliga o buzzer de acordo com as condições correspondentes.
-- Configura os modos que trabalham com os LEDs e o BUZZER.
-- Mapeia os valores de luminosidade entre 8 e 1015 e os registra em porcentagem.
+- Configura e executa as seções (1 LUZ, 2 UMIDADE, 3 TEMPERATURA) através das condições específicas para o DISPLAY, para depois, serem mostradas a cada 5 segundos pelo DISPLAY.
+- Lê e armazena os valores de leitura dos sensores (DHT22, LDR).
+- Converte o valor da LUMINOSIDADE pelo map, de uma escala de 8 a 1015 a uma escala de 0 a 100 para representar a LUMINOSIDADE em porcentagem.
+- Configura as condições que trabalham com os LEDs e o BUZZER, comparando os valores lidos pelos sensores para determinar a condição a ser executada.
 - Vermelho para condição CRÍTICA (alta luminosidade, valores excessivos ou muito baixos de temperatura e umidade acima de 70% ou abaixo de 50%).
 - Amarelo para condição ALERTA (luminosidade moderada, temperatura fora da faixa adequada).
 - Verde para condição OK (baixa luminosidade, temperatura e umidade adequadas).
-- Configura a média móvel para trabalhar com os dados dos sensores a cada iteração.
+- Configura a média móvel para trabalhar com os dados dos sensores a cada iteração e adiciona uma nova leitura.
 - São printados os valores (já feita a média móvel) no Serial Monitor.
 - Aguarda 200ms antes da próxima leitura.
 
@@ -65,6 +63,10 @@ O Display em conjunto com o Buzzer e os LEDs atuam como principais indicadores f
 
 
 ## Lógica por tras do código e conselhos:
+- As condições criadas para determinar a qualidade do ambiente em que o vinho se encontra aparecem duas vezes, uma trabalhando com o display, e a outra trabalhando com o Buzzer e os LEDs, como são semelhantes, há uma responsividade bem parecida e uniforme, porém estas condições não são totalmente iguais devido as petições do coordenador do projeto.
+<br>
+- A presença de variáveis controladoras de tempo foi necessária para não criar conflitos causados pelo delay, isto foi crucial na criação do slider de seções.
+<br>
 Os valores limite de luminosidade devem ser calibrados de acordo com os componentes a serem utilizados e as necessidades específicas da vinícola visto que:
 - A resistência do módulo LDR afeta de maneira diretamente proporcional aos valores de leitura.
 - o modelo do módulo LDR também influi nos valores de leitura.
