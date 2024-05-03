@@ -77,11 +77,11 @@ maior valor de leitura -> maior intensidade de luz
 <br> O delay ao final do Loop Principal serve para evitar oscilações que ocorram no intervalo dos valores limite de leds diferentes, assim evitando possíveis 
 averias nos LEDs.
 
-## Leitura de Dados
+## Leitura de Dados Virtual
 - Os valores já processados pela média móvel de LUMINOSIDADE, UMIDADE e TEMPERATURA podem ser visualizados pelo Serial Monitor.
 
 
-REPRODUÇÃO DO PROJETO NO SIMULADOR 
+# REPRODUÇÃO DO PROJETO NO SIMULADOR 
 <br> O projeto pode ser executado no simulador feito na plataforma Wokwi através [deste link](https://wokwi.com/projects/396093448737273857)
 
 
