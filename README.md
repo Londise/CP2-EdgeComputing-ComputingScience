@@ -37,7 +37,7 @@ O código embarcado no Arduino é responsável por ler os valores analógicos do
 
 - Configuração Inicial: Define os pinos, cria os bytes personalizados e variáveis necessárias.
 #Display
-O Display utilizado no projeto possuí um total de 9 slides de exibição de valores, cada um deles com responsividade aos valores de leitura, neste documento são mostrados os 9 slides presentes [deste link](https://1drv.ms/w/s!AvJcCUXaUfHtn0q4y_fwj6MFhKuf?e=xBN7kH)
+O Display utilizado no projeto possuí um total de 9 slides de exibição de valores, cada um deles com responsividade aos valores de leitura, [neste documento](https://1drv.ms/w/s!AvJcCUXaUfHtn0q4y_fwj6MFhKuf?e=xBN7kH) são mostrados os 9 slides presentes 
 
 ## SETUP
 - Inicia o som de introdução.
