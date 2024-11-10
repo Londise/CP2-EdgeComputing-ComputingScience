@@ -87,7 +87,7 @@ averias nos LEDs.
 
 Ao clicar no símbolo "PLAY", o projeto irá iniciar com condições ambientais modificáveis pelo usuário, ao clicar no LDR aparecerá uma barra de luminosidade onde o usuario poderá mudar os valores de luminosidade, assim como poderá clicar no sensor DHT22 para modificar a temperatura e a umidade, ao fazer isto, os LEDs, Buzzer e o DISPLAY irão responder de acordo a estas mudanças.
 
-
+<p>Sinta-se livre para testar o projeto e Happy Coding!</p>
 
 
 
